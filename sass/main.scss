@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@import './variables';
+@import './breakpoints';
+@import './mixins';
+@import './utilities';
+@import './globalResponsive';
+@import './animations';
+
+// components
+@import './components/index.scss';
+
+// pages
+@import './pages/index.scss';
+
+
+.user {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border: $border;
+
+  font-size: 2rem;
+
+  & img {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 2rem;
+    object-fit: contain;
+  }
+
+  & i { color: $light-white-clr; }
+
+  & p { margin-bottom: 0.5rem; }
+
+  & .update-info-btn {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  & .update-address-btn {
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

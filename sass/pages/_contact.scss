@@ -1,0 +1,14 @@
+.contact-grid {
+  @include md {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form {
+  h1 { 
+    margin-bottom: 1rem;
+    text-transform: capitalize; 
+  }
+
+  .contact-btn { text-transform: capitalize; }
+}

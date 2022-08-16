@@ -1,0 +1,41 @@
+// Footer
+.footer {
+  max-height: 385px;
+
+  & .box-container { align-items: flex-start; }
+ 
+  & .box { 
+    text-align: center; 
+    flex-grow: 1;
+  }
+
+  & img {
+    margin-bottom: 1rem;
+  } 
+
+  & h3 { 
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  & a {
+    display: block;
+    color: $light-white-clr;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+  & .credit {
+    padding: 3rem 2rem;
+    background-color: $black-clr;
+    color: $white-clr;
+    font-size: $fs-text;
+    text-align: center;
+
+    & a {
+      display: inline-block;
+      font-size: $fs-text;
+      color: $yellow-clr;
+    }
+  }
+}

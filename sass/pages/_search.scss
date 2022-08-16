@@ -1,0 +1,36 @@
+.search {
+  margin-top: 73px;
+  @include lg {
+    margin-top: 62px;
+  }
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: $flex-gap;
+
+  & input {
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    border: $border;
+    flex-grow: 1;
+  }
+
+  & .search-btn {
+    width: 6rem;
+    font-size: 2rem;
+
+    color: $white-clr;
+    background-color: $black-clr;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & i {
+      display: block;
+    }
+  }
+}

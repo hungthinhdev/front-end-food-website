@@ -1,0 +1,37 @@
+.form-input {
+  padding: 2rem;
+  border: $border;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  & h1 {
+    font-size: 2.5rem;
+    color: $black-clr;
+  }
+
+  & input, textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    border: $border;
+    outline: none;
+  }
+
+  & textarea {
+    flex-grow: 1;
+    resize: none;
+  }
+
+  & p {
+    font-size: 2rem;
+    color: $light-white-clr;
+  }
+
+  & a {
+    color: $red-clr;
+  }
+}

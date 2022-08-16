@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./public/css/reset.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <title>Frontend Food</title>
+  </head>
+  <body>
+    <header>
+      <div class="container nav-wrapper">
+        <a href="./index.html" class="logo">yum-yum 😊</a>
+        <nav class="nav-list">
+          <a href="./index.html">home</a>
+          <a href="./about.html">about</a>
+          <a href="./menu.html">menu</a>
+          <a href="./orders.html">orders</a>
+          <a href="./contact.html">contact</a>
+        </nav>
+        <div class="icons">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="./cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>(3)</span></a>
+          <a href="#" id="user-status-btn"><i class="fa-solid fa-user"></i></a>
+          <div class="show-nav-btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="profile">
+          <p class="username">hung thinh</p>
+          <div>
+            <a href="./profile.html" class="btn profile-btn">profile</a>
+            <a href="#" class="btn logout-btn">logout</a>
+          </div>
+          <p class="account">
+            <a href="./login.html">login</a>
+            or
+            <a href="./register.html">register</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="register">
+      <div class="container">
+        <form action="" class="form-input register-form">
+          <h1>register now</h1>
+          <input type="text" name="" id="" placeholder="enter your name">
+          <input type="email" name="" id="" placeholder="enter your email">
+          <input type="text" name="" id="" placeholder="enter your number">
+          <input type="password" name="" id="" placeholder="enter your password">
+          <input type="text" name="" id="" placeholder="confirm your password">
+          <button class="btn register-btn">register now</button>
+          <p>already have an account? <a href="#">login now</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <footer>
+          <div class="box-container">
+            <div class="box">
+              <img src="./public/images/email-icon.png" alt="">
+              <h3>our email</h3>
+              <a href="#">anissa_blanda21@hotmail.com</a>
+              <a href="#">gertrude_jast@gmail.com</a>
+            </div>
+
+            <div class="box">
+              <img src="./public/images/clock-icon.png" alt="">
+              <h3>opening hours</h3>
+              <a href="#">00:07am to 00:10pm</a>
+            </div>
+
+            <div class="box">
+              <img src="./public/images/map-icon.png" alt="">
+              <h3>our address</h3>
+              <a href="#">anissa_blanda21@hotmail.com</a>
+              <a href="#"></a>
+            </div>
+
+            <div class="box">
+              <img src="./public/images/phone-icon.png" alt="">
+              <h3>our number</h3>
+              <a href="#">612-224-2866</a>
+              <a href="#">612-224-0643</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="credit">
+        © copyright @ 2022 by <a href="#">hungthinhdev</a> | all rights reserved!
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>

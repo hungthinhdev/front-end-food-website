@@ -1,0 +1,23 @@
+$header-height: 73px;
+$footer-height: 385px;
+
+.login {
+  height: calc(100% - $header-height - $footer-height);
+}
+
+.login-form {
+  max-width: 50rem;
+  margin: 0 auto;
+
+  & h1 { 
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase; 
+  }
+
+  & input { margin-bottom: 2rem; }
+
+  & .login-btn { margin-bottom: 1.5rem; }
+
+  
+}

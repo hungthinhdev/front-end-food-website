@@ -1,0 +1,28 @@
+.carts {
+  & h1 { margin-bottom: 3rem; }
+
+  & .cart-total {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: $border;
+
+    & p {
+      font-size: 2rem;
+      color: $light-white-clr;
+    }
+
+    & span { color: $black-clr; }
+  }
+
+  & .delete-btn {
+    margin-top: 1rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: $white-clr;
+    background-color: $red-clr;
+  }
+}

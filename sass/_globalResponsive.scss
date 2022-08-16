@@ -1,0 +1,9 @@
+html {
+  @include lg {
+    font-size: 55%;
+  }
+
+  @include sm {
+    font-size: 50%;
+  }
+}

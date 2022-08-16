@@ -1,0 +1,110 @@
+.show-user-status {
+  display: block;
+  animation-name: showup;
+  animation-duration: 0.45s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showup{
+  from {
+    top: 135%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    top: 120%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@mixin slideIn($type, $direction) {
+  @if($type == 'to right') {
+    animation-name: slideToRight;
+  } @else {
+    animation-name: slideToLeft;
+  }
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-direction: #{$direction};
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.slideToRight {
+  @include slideIn('to right', 'normal')  
+}
+
+.slideToLeft {
+  @include slideIn('to left', 'normal')  
+}
+
+.slideToRightReverse {
+  @include slideIn('to right', 'reverse')  
+}
+
+.slideToLeftReverse {
+  @include slideIn('to left', 'reverse')  
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(-100px);
+  }  
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToLeft {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.showNavLink {
+  animation-name: showNavLink;
+  animation-delay: 0s;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showNavLink {
+  0% {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    height: 205px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.hideNavLink {
+  animation-name: showNavLink;
+  animation-delay: 0s;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideNavLink {
+  0% {
+    height: 205px;
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}

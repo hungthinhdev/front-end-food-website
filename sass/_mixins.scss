@@ -1,0 +1,64 @@
+@mixin title {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  line-height: 53px;
+  text-underline-offset: 1rem;
+}
+
+@mixin btn {
+  color: var(--dark-clr);
+  background-color: var(--yello-clr);
+  font-size: var(--fs-text);
+}
+
+// For extra small
+@mixin xsm {
+  @media screen and (max-width: ($xsm)) {
+    @content;
+  }
+}
+
+// For small
+@mixin sm {
+  @media screen and (max-width: ($sm)) {
+    @content;
+  }
+}
+
+// For Medium
+@mixin md {
+  @media screen and (max-width: ($md)) {
+    @content;
+  }
+}
+
+// For Semi medium
+@mixin semi-md {
+  @media screen and (max-width: ($semi-md)) {
+    @content;
+  }
+}
+
+// For large
+@mixin lg {
+  @media screen and (max-width: ($lg)) {
+    @content;
+  }
+}
+
+// For extra large
+@mixin xl {
+  @media screen and (max-width: ($xl)) {
+    @content;
+  }
+}
+
+// For extra extra large
+@mixin xxl {
+  @media screen and (max-width: ($xxl)) {
+    @content;
+  }
+}
